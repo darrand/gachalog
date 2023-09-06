@@ -1,7 +1,14 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
-    <h1>
-        Dashboard TEst
-    </h1>
+    <div class="d-flex">
+        {% include 'layouts/sidebar.html' %}
+        <div class="w-100">
+            {% include 'layouts/header.html' %}    
+            <div class="my-3 mx-3">
+                <h1>Dashboard TEst</h1>
+            </div>
+        </div>
+    </div>
+    
 {% endblock content%}
